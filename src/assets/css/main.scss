@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.text__header {
+		@apply text-center my-auto text-xl text-white font-bold px-3 py-5 tablet:text-3xl laptop:text-6xl;
+	}
+	.text__web {
+		@apply text-center my-auto text-xl text-white font-bold px-3 py-5 tablet:text-2xl laptop:text-4xl;
+	}
+	.text__main {
+		@apply text-black inline-block px-3 w-11/12 font-bold text-base tablet:text-xl laptop:text-2xl;
+	}
+}
+
+@layer components {
+	.img__fondo {
+		@apply min-h-screen bg-fixed bg-cover bg-center bg-no-repeat bg-[url('../images/festival-fondo.webp')];
+	}
+	.img__logo {
+		@apply px-3 mx-3 w-20 tablet:w-40 laptop:w-60;
+	}	
+}
+
+@layer utilities {
+	.btn__header {
+		@apply bg-gradient-to-r from-blue-400 to-fuchsia-700 hover:bg-gradient-to-l rounded-full text-center w-20 h-16 my-auto uppercase text-xl tablet:w-40 tablet:h-40 laptop:w-60 laptop:h-60;
+	}
+}
+
+.img_artist {
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}

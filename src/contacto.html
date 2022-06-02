@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Invitaciones</title>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+	</head>
+	<body class="img__fondo">
+		<header class="px-3 py-5">
+			<div class="flex justify-evenly tablet:flex-row-reverse laptop:flex-row ">
+					<img src="assets/images/logo.png" alt="logo" class="img__logo">
+					<h1 class="text__header">Festival de Música Popular 2022</h1>
+					<button type="submit" class="btn__header"><a href="index.html">portada</a></button>
+			</div>
+			<div class="flex flex-col justify-center">
+					<p class="text__web">25 de Mayo</p>
+					<p class="text__web">Polideportivo Municipal</p>
+			</div>	
+		</header>
+		<main class="py-18 bg-blue-100 bg-opacity-25 flex justify-around">
+			<div class="w-1/2 mx-4 py-5 space-y-4">
+				<p class="text__main">- Desde este formulario vas a poder solicitar el número de invitaciones que necesitas, hasta un máximo de 4 por persona.</p> 
+				<p class="text__main">- Debes rellenar todos los campos y las invitaciones se te enviaran al correo electrónico que nos facilites.</p> 
+				<p class="text__main">- Si no las recibes en 2 ó 3 días reclamalas en el teléfono 123456789. 
+				<p class="text__main">- Solo podrás solicitar para una actuación, por lo que, si deseas asistir a más de una deberás rellenar varias veces el formulario.</p>
+				<h3 class="text__web text-amber-800"> Formulario de invitaciones</h3>
+				<div class="bg-white rounded-xl shadow-lg p-8 mt-10">
+					<form class="flex flex-col space-y-2" data-netlify="true" >
+						<div class="my-2">
+							<label for="name" ss="text-md font-bold">Nombre:</label>
+						</div>
+						<div>
+							<input type="text" class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" id="name" placeholder="Aquí tu nombre">
+						</div>
+
+						<div class="my-2">
+							<label for="lastname" class="text-md font-bold">Apellidos:</label>
+						</div>
+						<div>
+							<input type="text" class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" id="lastname" placeholder="Aquí tus apellidos">
+						</div>
+
+						<div class="my-2">
+							<label for="email" class="text-md font-bold">Correo electrónico</label>
+						</div>
+						<div>
+							<input type="email" class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" id="email" placeholder="Tu email, donde recibir las invitaciones">
+						</div>
+
+						<div class="my-2">
+							<label for="phone" class="text-md font-bold">Teléfono:</label>
+						</div>
+						<div>
+							<input type="text" class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" id="phone" placeholder="Tu teléfono: solo para caso de incidencia">
+						</div>
+
+						<div class="my-2">
+							<label for="dataListOptions" class="text-md font-bold">¿Para que actuación quiere la invitación?</label>
+						</div>
+						<div>
+							<input class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" list="datalistOptions" placeholder="Selecciona en la flecha de la derecha">
+							<datalist id="datalistOptions">
+								<option value="1">Violonchelo</option>
+								<option value="2">Saxofón</option>
+								<option value="3">Danza</option>
+								<option value="4">Acordeón</option>
+								<option value="5">Actuacion estelar</option>
+								<option value="6">DiscoNoche</option>
+							</datalist>
+						</div>
+
+						<div class="my-2">
+							<label for="dataListNumbers" class="text-md font-bold">¿Cuantas invitaciones desea (máx: 4 por actuación)?</label>
+						</div>
+						<div>
+							<input class="ring-1 ring-grey-300 w-full rounded-md outline-none focus:ring-2 focus:ring-blue-300 px-4 py-2" list="dataListNumbers" placeholder="Escribe un numero o selecciona en la flecha de la derecha">
+							<datalist id="dataListNumbers">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</datalist>
+						</div>
+
+						<button type="submit" class="inline-block self-end bg-indigo-500 text-white font-bold rounded-xl px-6 py-4 uppercase">
+							Enviar
+						</button>
+
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
